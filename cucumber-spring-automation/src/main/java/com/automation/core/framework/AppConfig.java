@@ -9,13 +9,10 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
-import com.automation.core.runner.RunJunit;
-
 @Configuration
 @PropertySources({@PropertySource(value = "${runProperties}", ignoreResourceNotFound=true)})
 @ComponentScan(
-		basePackageClasses = {},//Stepdefs.class},
-		basePackages = {"com.automation.core.commonutils","${packages}"})
+		basePackages = {"com.automation.core.commonutils","${servicePackages}"})
 public class AppConfig {
 
 	@Bean
@@ -23,11 +20,6 @@ public class AppConfig {
 		PropertySourcesPlaceholderConfigurer properties = new PropertySourcesPlaceholderConfigurer();
 		properties.setIgnoreUnresolvablePlaceholders(true);
 		return properties;
-	}
-	
-	@Bean
-	public RunJunit runJunit(){
-		return new RunJunit();
 	}
 	
 }
