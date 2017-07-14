@@ -1,7 +1,7 @@
 @orderprocessing
 Feature: Orderprocessing
 
-@Smoke
+@important
 Scenario: Place an order test4
 
 Given I have "1 Regular" item available in ship node "009430"
