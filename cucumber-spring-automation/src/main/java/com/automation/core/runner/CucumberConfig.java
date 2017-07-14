@@ -1,4 +1,4 @@
-package com.tests;
+package com.automation.core.runner;
 
 import org.junit.runner.RunWith;
 
@@ -11,5 +11,5 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/main/resources",
 		plugin = {Reports.ALLURE,Reports.CUCUMBER_HTML,Reports.CUCUMBER_JSON})
-public class CucumberTest {
+public class CucumberConfig {
 }
