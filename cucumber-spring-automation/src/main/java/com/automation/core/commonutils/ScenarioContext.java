@@ -1,13 +1,14 @@
-package com.automation.commonutils;
+package com.automation.core.commonutils;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import com.automation.core.framework.ScenarioScope;
+
 @Component
-@Scope("cucumber-glue")
+@ScenarioScope
 public class ScenarioContext {
 	
     public Map<String, Object> context = new HashMap<String, Object>();

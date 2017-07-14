@@ -1,4 +1,4 @@
-package com.automation.framework;
+package com.automation.core.framework;
 
 import java.io.IOException;
 
@@ -9,13 +9,13 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
-import com.automation.runner.RunJunit;
+import com.automation.core.runner.RunJunit;
 
 @Configuration
 @PropertySources({@PropertySource(value = "${runProperties}", ignoreResourceNotFound=true)})
 @ComponentScan(
-		basePackageClasses = {Stepdefs.class},
-		basePackages = {"com.automation.commonutils","${packages}"})
+		basePackageClasses = {},//Stepdefs.class},
+		basePackages = {"com.automation.core.commonutils","${packages}"})
 public class AppConfig {
 
 	@Bean

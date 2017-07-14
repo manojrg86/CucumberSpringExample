@@ -1,4 +1,4 @@
-package com.automation.commonutils;
+package com.automation.core.commonutils;
 
 import org.springframework.stereotype.Component;
 

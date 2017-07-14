@@ -1,13 +1,9 @@
 package com.project.manager;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
-import org.springframework.test.context.ContextConfiguration;
 
-import com.automation.commonutils.HttpService;
-import com.automation.framework.AppConfig;
-import com.automation.framework.Stepdefs;
+import com.automation.core.commonutils.HttpService;
 
 @Service
 public class SampleManager {

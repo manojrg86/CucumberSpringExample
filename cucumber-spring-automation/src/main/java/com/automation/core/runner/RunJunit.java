@@ -1,4 +1,4 @@
-package com.automation.runner;
+package com.automation.core.runner;
 
 import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class RunJunit {
 
-	public void runTests() {
+	public void runCucumberTests() {
 		JUnitCore junitCore = new JUnitCore(); 
 		//junitCore.addListener(new TextListener(System.out)); 
-		junitCore.run(RunTests.class);
+		junitCore.run(CucumberTests.class);
 	}
 }

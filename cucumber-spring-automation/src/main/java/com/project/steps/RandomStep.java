@@ -2,8 +2,8 @@ package com.project.steps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.automation.commonutils.ScenarioContext;
-import com.automation.framework.Stepdefs;
+import com.automation.core.commonutils.ScenarioContext;
+import com.automation.core.framework.Stepdefs;
 
 import cucumber.api.java.en.Then;
 
